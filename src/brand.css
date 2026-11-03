@@ -1,0 +1,49 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  width: 182px;
+  height: auto;
+}
+
+.footer-grid .logo img {
+  width: 205px;
+}
+
+.enterprise-solutions {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.enterprise-solutions .solution {
+  min-height: 275px;
+}
+
+.finance-disclaimer {
+  border-left: 2px solid #8ac1d5;
+  margin-top: 22px !important;
+  padding-left: 15px;
+  font-size: 13px;
+}
+
+.contact-grid-single {
+  grid-template-columns: minmax(0, 760px);
+}
+
+@media (max-width: 1000px) {
+  .enterprise-solutions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .logo img {
+    width: 150px;
+  }
+
+  .enterprise-solutions {
+    grid-template-columns: 1fr;
+  }
+}
